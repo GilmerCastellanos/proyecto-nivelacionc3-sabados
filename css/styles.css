@@ -1,0 +1,131 @@
+/*font-family: 'Caveat', cursive;
+font-family: 'Rubik Marker Hatch', cursive;
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+html {
+  margin: border-box;
+}
+.contenedor {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.navegacion {
+  height: 50px;
+  width: 100%;
+  border-bottom: 2px solid rgb(196, 194, 194);
+  margin: 30px auto 0 0;
+  
+  
+
+}
+.navegacion .lista {
+  height: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  
+}
+@media (max-width:480px){
+  .navegacion .lista{
+    max-width: 100%;
+    display:flex;
+  
+    flex-direction: column;
+  }
+}
+
+.enlaces {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Caveat', cursive;
+  letter-spacing: 2.5px;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.categorias {
+  padding: 10px;
+  width: 150px;
+  list-style: none;
+  position: absolute;
+  display: none;
+  
+  margin-top: 1px;
+  /*box-shadow: 10px 10px 10px 1px rgb(243, 243, 243);*/
+  border-radius: 20px;
+  text-align: center;
+}
+.categorias li {
+  padding-top: 10px ;
+  width: 150px;
+}
+li .categorias__enlaces {
+  
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+  text-align:left;
+  
+  
+  
+}
+
+.lista li:hover .enlaces{
+  font-size: 30px;
+  
+}
+
+.lista li:hover .categorias {
+  display: block;
+  
+  position: absolute;
+ 
+  
+}
+.categorias >li:hover {
+  
+  width: 200px;
+  margin-left: -20px;
+  
+}
+.categorias > li:hover > .categorias__enlaces {
+  font-size: 24px;
+  color: purple;
+  
+  
+}
+
+.cool {
+  display: block;
+  width: auto;
+  height: 150px;
+  margin-top: 70px;
+ 
+  text-align: center;
+}
+.cool h1{
+font-family: 'Rubik Marker Hatch', cursive; 
+font-size: 100px;
+color: rgba(0,0,0,0.2);
+letter-spacing: 15px;
+
+}
+
